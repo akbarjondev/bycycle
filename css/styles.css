@@ -1,0 +1,102 @@
+/*fonts*/
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-500.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin-700.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-700.woff') format('woff');
+}
+
+/*general styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #16a085;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.box {
+  width: 600px;
+  height: 450px;
+  margin: 60px auto;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
+  background-image: url("../img/bicycle-light.png");
+  background-repeat: no-repeat;
+  background-position: center bottom -150px;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar {
+  display: block;
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+  .avatar:hover {
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3)
+  }
+.light-text {
+  font-size: 14px;
+  color: #acb0b4;
+}
+.list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-text {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #676260;
+}
+.price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.total {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
